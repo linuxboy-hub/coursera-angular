@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" ng-app="DIApp">
+  <head>
+    <meta charset="utf-8">
+    <script src="angular.min.js" charset="utf-8"></script>
+    <script src="app.js" charset="utf-8"></script>
+    <title>Dependency Injection</title>
+  </head>
+  <body>
+    <h1>Dependency Injection in Javascript (and Angular JS)</h1>
+    <div ng-controller="DIController">
+      <input type="text"
+      ng-model="name"
+      ng-blur="upper();"> <!-- ng-blur es lo que se ejecuta cuando el text box pierde el foco -->
+      <!-- Entonces se une esto con la funcion upper() que esta en el $scope -->
+    </div>
+  </body>
+</html>

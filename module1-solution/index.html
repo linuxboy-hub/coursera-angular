@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" ng-app='LunchApp'>
+  <head>
+    <meta charset="utf-8">
+    <script src="angular.min.js"></script>
+    <script src="app.js"></script>
+    <title>Assignment 1</title>
+  </head>
+  <body>
+    <h1>Assignment 1 - Lunch Checking</h1>
+    <div ng-controller='LunchCheckController'>
+      <input type="text" ng-model="csv" placeholder={{placeholder}}> NOT consider empty items
+      <br><br>
+      <button type="button" ng-click='check()'>Check If Too Much</button>
+      <br><br>
+      <div style={{style}}>
+        {{msg}}
+      </div>
+    </div>
+  </body>
+</html>

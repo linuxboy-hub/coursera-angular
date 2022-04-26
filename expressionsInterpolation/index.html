@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" ng-app='MsgApp'>
+  <head>
+    <meta charset="utf-8">
+    <script src="angular.min.js"></script>
+    <script src="app.js"></script>
+    <title>Exp and Interp.</title>
+  </head>
+  <body>
+    <h1>Expressions and Interpolation</h1>
+    <div ng-controller='MsgController'>
+      {{name}} has a message: <br>
+      {{message()}}
+
+      <div>
+        <button ng-click='changeCharacter()'>Change Character</button>
+        <br>
+
+        <img ng-src="images/{{character}}.jpg" width="200">
+<!-- Se utiliza el atributo "ng-src" porque este hace que se busque -->
+<!-- la imágen únicamente cuando el código angular sea interpretado -->
+<!-- y gracias a esto no sale el error 404 cuando el html busca la  -->
+<!-- imágen en los recursos. -->
+
+      </div>
+
+    </div>
+  </body>
+</html>

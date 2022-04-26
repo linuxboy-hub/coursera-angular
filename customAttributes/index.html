@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Custom Attributes</title>
+  </head>
+  <body>
+    <h1>HTML Custom Attributes</h1>
+    <div id="target" ng-app="myTestApp">
+      <section>SECTION 1
+        <article>
+          Article 1 - open the console to see how to get attributes from JS
+        </article>
+      </section>
+    </div>
+    <script>
+      var element = document.getElementById('target');
+      console.log(element.getAttribute('ng-app'));
+
+      var element2 = document.querySelector('[ng-app]')
+      console.log(element2);
+
+    </script>
+  </body>
+</html>

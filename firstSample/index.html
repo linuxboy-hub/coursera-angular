@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html ng-app="myFirstApp">
+<!-- A partir de que etiqueta quiero la applicacion creada con el js sea responsable-->
+  <head>
+    <meta charset="utf-8">
+    <script src="angular.min.js"></script>
+    <script src="app.js"></script>
+    <title>My First AngularJS App</title>
+  </head>
+  <body>
+    <h1>My first angular app</h1>
+    <div ng-controller="myFirstController">
+      <h2>Variable from the scope: {{name}}</h2>
+      <p>{{sayHello()}}</p>
+      <input type="text" ng-model="lastName"><br><br>
+      <!-- Changing the value that is attached to the scope´s property
+        called "name"-->
+      Your last name is: {{lastName}}
+    </div>
+
+  </body>
+</html>
